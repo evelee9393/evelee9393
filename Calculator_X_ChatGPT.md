@@ -58,7 +58,10 @@ print(calculation(num1, operator, num2))
 I've read about how we should be using AI tools to help with coding or making code readable, so I thought,
 _'Why not make the calculator function into just one line?'_
 Coincidentally, I was reviewing some basic python and came across using  ```eval()```, which evaluates an expression into a python statement if it can be run. Thus, as a lazy person (who does not like repeating multiple lines of code), I feel like it can be done.
-![image](https://github.com/evelee9393/evelee9393/assets/166385908/2a4ad4da-53c6-4c00-975a-cbd58f23b648)
+
+<kbd>
+<img src="https://github.com/evelee9393/evelee9393/assets/166385908/2a4ad4da-53c6-4c00-975a-cbd58f23b648"/>
+</kbd>
 
 ## Final Code
 Thus, with some modifications, the calculator function was updated (also reminding I need to consider ZeroDivisionError 😂).
