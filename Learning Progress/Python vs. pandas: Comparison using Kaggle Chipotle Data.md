@@ -1,7 +1,7 @@
 # Python vs. Pandas: Comparison using Kaggle Chipotle Data
 While practicing with [recommended Kaggle Pandas Exercises](https://www.kaggle.com/discussions/getting-started/120274) to become more familiar with pandas, I was reminded when I first used pandas, and the Instructor say how much easier it is to compute via pandas than Python. This article is a result of my ramblings and comparison.
 The whole completed practice is made possible with credit to Kaggle and https://github.com/justmarkham for sharing the dataset and materials.
-The Jupyter Notebook for this Chipotle Pandas Exercise can be found here.
+The Jupyter Notebook for this Chipotle Pandas Exercise can be found [here](https://github.com/evelee9393/evelee9393/blob/8015815a1d572426b954721246267cd13b53e811/Learning%20Progress/20240812%20Chipotle%20Pandas%20Exercises.ipynb).
 
 ## Dataset
 The [Chipotle dataset](https://www.kaggle.com/discussions/getting-started/120274) contains the sales data of a Chipotle restaurant, with which there are columns for:
@@ -19,7 +19,8 @@ Step 9: Which was the most-ordered item
 We shall see the difference between using Pandas and Python, using Step 9 as an example
 
 ## Pandas
-pandas uses functions similar to SQL, which makes it useful in data analysis. In this case, the code is executed in the steps below to get the most-ordered item:
+pandas uses functions similar to SQL, which makes it useful in data analysis. ([See pandas documentation](https://pandas.pydata.org/docs/getting_started/comparison/comparison_with_sql.html#group-by))
+In this case, the code is executed in the steps below to get the most-ordered item:
 1. pandas performs groupby() method, used similarly to SQL's GROUP BY operations, on 'item_name'.
 2. Aggregation is then used to get the sum of 'quantity' for each 'item_name'
 3. The summed quantity of the items is sorted by descending order
