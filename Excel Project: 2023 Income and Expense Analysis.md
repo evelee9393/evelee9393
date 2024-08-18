@@ -1,4 +1,4 @@
-Excel Project 1: 2023 Income and Expenses Analysis
+Excel Project: 2023 Income and Expenses Analysis
 ---
 Inspired by my expenditure-recording app, I have decided to replicate something similar using functions and PivotTable on Excel.
 
