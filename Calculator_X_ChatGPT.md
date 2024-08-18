@@ -118,3 +118,7 @@ Using ChatGPT has made my learning experience much faster, but there are also so
 | If you have basic code knowledge, you can use it to modify code with minimal effort | You won't do your research and discover more efficient coding techniques by yourself! |
 | ChatGPT basically organizes the most efficient method out there! | Sometimes it will return unwanted parts of code or change your variables, so watch out! |
 Thanks for reading through my learning journey. I hope it will also help me in the future as well (or maybe I'll have a laugh when I look back at this).
+
+## Update
+I've been warned about the dangers of using "eval" function, as it can be an entry point for malware or malicious programming tools.
+This will be noted when writing code in the real-world, where we have to consider future code updating, maintenance, cybersecurity and more.
