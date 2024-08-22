@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @evelee9393
-- 👀 I’m interested in becoming a full-stack engineer/data scientist
+- 👀 I’m interested in becoming a full-stack engineer/AI software programmer /data scientist #undecided
 - 🌱 I’m currently learning Python, SQL, web scraping and more!
 - 😄 Pronouns: She/Her
 - ⚡ Fun fact: Sesame is my 9-year-old cat. He's a grump sometimes, but our family love him!
