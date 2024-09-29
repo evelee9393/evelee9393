@@ -4,10 +4,11 @@
 
 ## 摘要
 - 目標：
-  通過數據處理和視覺化，提供易於理解的全台灣七天氣溫預報，展示數據擷取及分析能力。
+  - 通過數據處理和視覺化，提供易於理解的全台灣七天氣溫預報，展示數據擷取及分析能力。
 - 數據來源：
-  從【氣象資料開放平臺】爬取【鄉鎮天氣預報-台灣未來1週天氣預報】的資訊。
-  [1] https://opendata.cwa.gov.tw/index
-  [2] https://opendata.cwa.gov.tw/dataset/forecast/F-D0047-091
+  - 從【氣象資料開放平臺】爬取【鄉鎮天氣預報-台灣未來1週天氣預報】的資訊。
+  - [1] https://opendata.cwa.gov.tw/index
+  - [2] https://opendata.cwa.gov.tw/dataset/forecast/F-D0047-091
 - 技術工具：
-  運用Requests、JSON、API Key等進行數據獲取和處理。使用Matplotlib和datetime模組實現數據視覺化。
+  - 運用Requests、JSON、API Key等進行數據獲取和處理。
+  - 使用Matplotlib和datetime模組實現數據視覺化。
