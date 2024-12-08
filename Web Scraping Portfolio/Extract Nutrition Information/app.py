@@ -5,7 +5,7 @@ import plotly.graph_objects as go
 import matplotlib.font_manager as fm 
 
 # 使用 FontProperties 建立字體屬性物件 - 以利plot graph時可顯示中文
-myfont = fm.FontProperties(fname=r'./NotoSansCJK-DemiLight.ttc')
+ZHfont = fm.FontProperties(fname=r'./NotoSansCJK-DemiLight.ttc')
 
 # PART 1: Load dataset with caching
 def load_data():
@@ -38,7 +38,7 @@ df['HSR'] = df.apply(calculate_hsr, axis=1)
 st.sidebar.title('Filter Nutritional Data')
 selected_filter = st.sidebar.selectbox('Select an Item', ['Average', *df['樣品名稱'].unique()])
 
-# Use `selected_filter` directly without storing in `st.session_state`
+# Display Selected Filter on Main Section
 st.write(f"Selected Filter: {selected_filter}")
 
 # PART 4: Filter data based on sidebar selection
@@ -81,10 +81,6 @@ nutrition_html = nutr_info().to_html(index=False)
 
 st.sidebar.title("**Nutrition Information:**")
 st.sidebar.markdown(nutrition_html, unsafe_allow_html=True)
-
-# Fetch the data and store in session state - NO NEED SINCE DYNAMIC DATA
-#if 'nutr_info_data' not in st.session_state:
-#    st.session_state.nutr_info_data = nutr_info()
 
 
 # PART 6: Calculations for Graph (nutr_table function)
@@ -147,7 +143,7 @@ def nutr_graph():
                 wedgeprops={'width': 0.3}
         )
         # Set title for each subplot with the nutrient name
-        axes[i].set_title(row.Nutrient, fontproperties=myfont, fontsize=16) 
+        axes[i].set_title(row.Nutrient, fontproperties=ZHfont, fontsize=16) 
 
         # Annotate the pie chart with two lines in the center
         axes[i].text(
@@ -208,12 +204,3 @@ def HSR_meter():
 
 HSR_meter()
 nutr_graph()
-
-#PART 9: Put it into two columns, larger for nutr_graph()
-#col1, col2 = st.columns([1, 2])
-
-#col2.subheader(f'每日總熱量的百分比 - {selected_filter}')
-#col2.write(nutr_graph())
-
-#col1.subheader(f'Health Score Rating - {selected_filter}')
-#col1.write(HSR_meter())
