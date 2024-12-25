@@ -7,10 +7,14 @@ import matplotlib.font_manager as fm
 # 使用 FontProperties 建立字體屬性物件 - 以利plot graph時可顯示中文
 ZHfont = fm.FontProperties(fname=r'./NotoSansCJK-DemiLight.ttc')
 
-# Project Introduction - added 2024.12.15 for deployment
+# Project Introduction and link to GitHub for deployment purposes
 st.title("Data Visualization of Nutritional Information")
 st.text("This is the Data Visualization part of a Nutritional Information Web Scraping Project by Eve Lee, who is looking for a career change in data analytics and backend development. The data was extracted from the 'frozen' foods of the processed  category of the Taiwan Food and Drug Administration (TFDA)'s database.")
-
+st.markdown(
+    'For more details on this project, please visit [my GitHub directory](https://github.com/evelee9393/evelee9393/tree/main/Web%20Scraping%20Portfolio/Extract%20Nutrition%20Information).',
+    unsafe_allow_html=True
+)
+        
 # PART 1: Load dataset with caching
 def load_data():
     return pd.read_csv('FrozenFood_ExtractedNutrInfo.csv', encoding='utf-8')
