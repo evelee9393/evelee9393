@@ -11,12 +11,12 @@
     <h1 id="title">Sesame Foods Survey</h1>
     <p id="description">Thank you for taking the time to help us improve our services.</p>
     <form id="survey-form"> 
-      <fieldset>
+      <fieldset id="basic-info">
         <label for="name" id="name-label">Name<input id="name" type="text" name="name" required placeholder="Enter your name" /></label>
         <label for="email" id="email-label">Email<input id="email" type="email" name="email" required placeholder="Enter your email" /></label>
         <label for="number" id="number-label">Age (optional)<input id="number" type="number" name="number" min="5" max="100" placeholder="25" /></label>
         <label for="employment">Please select your current employment status:
-          <select id="dropdown" name="employment">
+          <select id="dropdown" name="employment" required>
             <option value="">Select an option</option>
             <option value="1">Student</option>
             <option value="2">Employed</option>
@@ -24,7 +24,7 @@
           </select>
         </label>
       </fieldset>
-      <fieldset>
+      <fieldset class="rec_fav">
         <legend>Would you recommend Sesame Foods to a friend?</legend>
         <label for="Definitely"><input type="radio" name="referral" id="Definitely" value="Definitely" checked/> Definitely</label>
         <label for="Maybe"><input type="radio" name="referral" id="Maybe" value="Maybe" /> Maybe</label>
@@ -47,7 +47,115 @@
 
 ** start of undefined **
 
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: url('https://plus.unsplash.com/premium_photo-1674062990183-53e1aceb22de?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Verdana', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  margin: 0;
+  min-height: 100vh;
+  width: 100%;
+}
 
+h1, p {
+  text-align: center;
+}
+
+p {
+  font-style: italic;
+  font-size: 1.125rem;
+  margin: 1em auto;
+  max-width: 600px;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+  border: none;
+  padding: 2em 0;
+  border-bottom: 1.5px solid grey;
+}
+
+fieldset.rec_fav {
+  padding: 0;
+}
+
+label {
+  display: block;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.3rem;
+}
+
+label#referral, label#fav-food {
+  display: flex;
+  align-items: center;
+}
+
+.required {
+  color: red;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  transform: scale(0.8);
+  margin-right: 5px; /* Adds small space between icon and text */
+  min-height: 0;
+}
+
+
+input, textarea, select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: white;
+  border: 1px solid gray;
+  color: #ffffff;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-size: 0.9rem;
+  font-family: Verdana;
+}
+
+select option:first-child {
+  color: gray;  /* Change only the first option */
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  background-color: darkgrey;
+  border-color: white;
+}
+
+input[type="submit"]:hover {
+  background-color: gray;
+}
 
 ** end of undefined **
 
